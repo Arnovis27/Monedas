@@ -1,7 +1,7 @@
 # Monedas
 Se requiere recrear un programa que simule una alcancia donde se van a almacenar monedas con ciertos criterios espeficios de evaluacion.
 
-## Construccion
+## Criterios de Evaluacion
 Los criterios para recibir y evaluar los valores son los siguientes:  
 <ul>
   <li>La alcancia solo puede recibir monedas de 50,100,200,500 y 1000 pesos colombianos.</li>
