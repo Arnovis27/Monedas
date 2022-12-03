@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class Main {
 
-  static List<Integer> alcancia = new ArrayList<>();
+  static List<Integer> alcancia = new ArrayList<>(); //lista vacia
   static Scanner scanner = new Scanner(System.in);//Clase para pedir valor por consola
   static int coinToInsert = 0;
   static int findByCoinDenomination= 0;
@@ -17,7 +17,8 @@ public class Main {
 
     boolean closed = false;
     int opcion;
-
+  
+    //ciclo que se va que se mantiene ejecutando
     while(!closed){
 
       System.out.println("1. Insert Coin");
@@ -50,6 +51,7 @@ public class Main {
     }
   }
 
+  //Ingresamos la moneda y validamos que sean solo de las necesitadas
   public static void insertCoin(){
     System.out.println("Coin to insert:");
     coinToInsert = Integer.parseInt(scanner.nextLine());
@@ -69,10 +71,7 @@ public class Main {
     alcancia.forEach(coin -> System.out.println(coin));
   }
 
-  //50    1
-  //100   2
-  //200   3
-  //1000  4
+  //Imprime la moneda y al lado su cantidad
   public static void printCoinsByCount(){
 
     System.out.println("-------------------------------------");
