@@ -19,11 +19,6 @@ public enum TypeCoin {
     return valueCoin;
   }
 
-  //Arrays.stream
-  //Qué es un stream
-  //Método anyMatch
-  //Lambdas
-  //Qué es un enum
   //Calcular si la moneda es valida
   public static boolean validateExistsTypeCoin(Integer valueCoin){
     return Arrays.stream(TypeCoin.values()).anyMatch(v -> v.getValueCoin() == valueCoin);
